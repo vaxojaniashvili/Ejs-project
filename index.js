@@ -1,8 +1,8 @@
 import express from "express";
+import { port } from "./port/common.js";
 
 const app = express();
 app.set("view engine", "ejs");
-const port = 3001;
 
 app.get("/api/users", (req, res) => {
   const userName = "vaxo";
